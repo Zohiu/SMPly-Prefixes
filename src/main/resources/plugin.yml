@@ -1,0 +1,7 @@
+name: SMPly-Prefixes
+version: '${project.version}'
+main: io.github.zohiu.smplyprefixes.SMPlyPrefixes
+api-version: 1.19
+authors: [ Zohiu ]
+description: Simple custom prefixes in vanilla.
+website: https://github.com/Zohiu/SMPly-Prefixes
