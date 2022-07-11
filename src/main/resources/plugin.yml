@@ -5,3 +5,7 @@ api-version: 1.19
 authors: [ Zohiu ]
 description: Simple custom prefixes in vanilla.
 website: https://github.com/Zohiu/SMPly-Prefixes
+commands:
+  prefix:
+    description: te
+    usage: /prefix
