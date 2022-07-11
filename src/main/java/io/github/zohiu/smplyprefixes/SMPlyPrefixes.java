@@ -1,6 +1,9 @@
 package io.github.zohiu.smplyprefixes;
 
+import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.logging.Level;
 
 public final class SMPlyPrefixes extends JavaPlugin {
 
@@ -11,11 +14,12 @@ public final class SMPlyPrefixes extends JavaPlugin {
         instance = this;
         this.getCommand("prefix").setExecutor(new PrefixCommand());
 
+        this.getLogger().log(Level.INFO, ChatColor.GREEN + "Enabled.");
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        this.getLogger().log(Level.INFO, ChatColor.RED + "Disabled.");
     }
 
     public static SMPlyPrefixes getInstance() {
